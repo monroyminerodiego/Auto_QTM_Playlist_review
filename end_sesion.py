@@ -21,6 +21,8 @@ def generate_schedule():
     def get_prj_ctg(task):
         if task in keywords_list:
             output = keywords_dic[task]
+        elif 'couching' in task:
+            output = f'BBP Projects\tTraining\t\t{task}'
         else:
             output = f'\t\t\t{task}'
         return output

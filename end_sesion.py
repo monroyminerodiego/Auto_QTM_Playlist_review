@@ -19,20 +19,23 @@ def generate_schedule():
         return tiempo_transcurrido
     # [CHECK]
     def get_prj_ctg(task):
-        if task in keywords_list:
-            output = keywords_dic[task]
-        elif 'couching' in task:
-            output = f'BBP Projects\tTraining\t\t{task}'
+        task_lower = task.lower()
+        if task_lower in keywords_list:
+            return keywords_dic[task_lower]
+        elif 'couching' in task_lower:
+            return f'BBP Projects\tTraining\t\t{task}'
+        elif 'ticket' in task_lower:
+            return f'BBP Projects\tTraining\t\t{task}'
         else:
-            output = f'\t\t\t{task}'
-        return output
+            return f'\t\t\t{task}'
+        
 
     
     activities = open('../Notes/bitacora.txt')
     clipboard = ''
     row_number = 2
     for activity in activities:
-        activity = ((activity.lower()).replace('\n','')).split('|')
+        activity = ((activity).replace('\n','')).split('|')
         
         row_info = f'{dt.datetime.now().year}\t{dt.datetime.now().month}\t{dt.datetime.now().day}\tDiego\t{get_prj_ctg(activity[1])}\t{get_elapsed_time(activity)}\t\t=NUM.DE.SEMANA(FECHA(A{row_number},B{row_number},C{row_number}),1)'
         

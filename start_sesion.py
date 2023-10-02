@@ -14,8 +14,8 @@ os.system('cls')
 def double_check_screen(name1,name2):
 	counter = 0
 	status = True
-	path1 = '../Images/'+name1+'.png'
-	path2 = '../Images/'+name2+'.png'
+	path1 = 'Images/'+name1+'.png'
+	path2 = 'Images/'+name2+'.png'
 	localization = py.locateOnScreen(path1,confidence=0.9)
 	while localization == None:
 		py.sleep(1)
@@ -33,7 +33,7 @@ def double_check_screen(name1,name2):
 def click_screen(name):
     state = True
     counter = 0
-    path = '../Images/'+name+'.png'
+    path = 'Images/'+name+'.png'
     localization = py.locateCenterOnScreen(path,confidence=0.9)
     while localization == None:
         py.sleep(1)
@@ -48,7 +48,7 @@ def click_screen(name):
 def check_screen(name):
     state = True
     counter = 0
-    path = '../Images/'+name+'.png'
+    path = 'Images/'+name+'.png'
     localization = py.locateOnScreen(path,confidence=0.9)
     while localization == None:
         py.sleep(1)
@@ -104,6 +104,7 @@ def open_chrome():
 
     open_KeePass(); py.sleep(2)
     
+    py.press('tab',presses=2,interval=0.02); py.sleep(0.3)
     py.press('home'); py.sleep(0.3)
     py.hotkey('ctrl','b'); py.sleep(0.3)
     py.hotkey('win','1'); py.sleep(0.3)
@@ -158,11 +159,11 @@ def read_info(html):
 
 
 paths = {
-    "bitacora":"C:/Users/Diego Monroy/Projects/Notes/bitacora.txt",
-    "playcounts":"C:/Users/Diego Monroy/Projects/Notes/playcounts.txt",
-    "notas":"C:/Users/Diego Monroy/Projects/Notes/notas.txt",
-    "pendientes":"C:/Users/Diego Monroy/Projects/Notes/pendientes.txt",
-    "tickets":"C:/Users/Diego Monroy/Projects/Notes/tickets.txt",
+    "bitacora":"C:/Users/Diego Monroy/Projects/Automatization/Notes/bitacora.txt",
+    "playcounts":"C:/Users/Diego Monroy/Projects/Automatization/Notes/playcounts.txt",
+    "notas":"C:/Users/Diego Monroy/Projects/Automatization/Notes/notas.txt",
+    "pendientes":"C:/Users/Diego Monroy/Projects/Automatization/Notes/pendientes.txt",
+    "tickets":"C:/Users/Diego Monroy/Projects/Automatization/Notes/tickets.txt",
     "chrome":"C:/Program Files/Google/Chrome/Application/chrome.exe",
     "KeePass":"C:/Program Files/KeePass Password Safe 2/KeePass.exe"
     }
@@ -176,8 +177,5 @@ files = [
     'KeePass'
     ]
 
-# if 'chrome' in files: open_chrome()
-# if (('pendientes' in files) or ('bitacora' in files) or ('tickets' in files) or ('notas' in files) or ('playcounts' in files)): open_notepad()
-
-with open('../Notes/html.txt') as file:
-    read_info(file)
+if 'chrome' in files: open_chrome()
+if (('pendientes' in files) or ('bitacora' in files) or ('tickets' in files) or ('notas' in files) or ('playcounts' in files)): open_notepad()

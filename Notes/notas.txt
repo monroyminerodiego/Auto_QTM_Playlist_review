@@ -1,0 +1,72 @@
+------------------------ UPDATES QPLAYER ------------------------
+- 01/09/2023: New version 2.0.1.8 (exe y dll)
+- 07/09/2023: New version 2.0.1.9
+- 25/09/2023: New version 2.0.2.0 (exe y dll)
+
+------------------------ PLAYLIST ------------------------
+- Vertificar la disponibilidad de una cara: QTM Clt User > digital Menu > Digital Occupancy
+
+
+
+------------------------ QPlayer ------------------------ 
+- Eliminar caras de contratos: QTM Clt > Digital Menu > Digital Faces (Aqui se pone QTM Lab en Digital Class y se ven los diferentes contratos) > Contrato a eliminar > Creative Contents > Select "Edit" Banner >  Face ID (quitar la cara) > Save < Seleccion de la cara que vamos a eliminar > Remove Selected Faces > Safe > Delete
+
+- Para sacar la contraseña para los FaceID de cada compañia: Company Info > Divisions >BBP Section > QPlayer Password
+
+- Saber que FaceID tiene una compu: BBP > Data > PlayerSetting.json
+
+
+
+
+- Seller > ParentDivision > Division: Principales filtros. Siempre en querys de BBDD
+- 
+
+------------------------ SIGNCATEGORY TABLE ------------------------
+- Cosas que todos van a utilizar (catalogos maestros) sólo preguntar con Cesar
+
+- sacar identificadores: SELECT * FROM Company WHERE CompanyName LIKE '%___%'
+
+- SignCategory es para saber que tipo de cara es; CompanySignCategory es la tabla donde las empresas guardan donde van a poner su banner.
+
+- Crear SignCategory (SIEMPRE PREGUNTAR A CESAR) para QTM Generic: En la tabla Signcategory se crean los catalogos nuevos que se comparten con todos los clts. Esa tabla tiene un problema donde despues de subir los registros, el SigncategoryID tiene que ser lo mismo que la PK de la tabla SignNumericID.
+
+- QTM Clt > Company Info > Sign categories: Para saber cuales son las categorias que tiene un clt de todo el catalogo maestro.
+
+- Tomar en cuenta las descipciones en español y en inglés.
+
+
+------------------------ FACE TABLE ------------------------
+- EOI (Eyes Of Impresion) es la Geo-rating 
+
+
+------------------------ UPDATE MASIVE DATA ------------------------
+1. Analiza el problema
+2. Crear tablas temp en support primero UAT y luego PROD
+3. Validar data con prod
+4. Backup de data
+5. Update de data
+6. Report de estatus
+
+SELECT [Columnas a traer]
+
+INNER JOIN [Face.ClientFaceID = Temp.ClientFaceID] 
+"a quienes le vamos a aplicar los cambios"
+
+WHERE [Seller,Division]
+"filtros para que sean los datos verdaderos"
+
+------------------------ JCD (SAP UNITY Costumers) ------------------------
+- External System Integrations > SAP UNITty Task 20659  > Centram > Cstumer Export Interface > file con fecha mas actual: ese archivo XML es donde viene la informacion que se guarda en el servidor compartido de QTM y SAP (JCD)
+- QTM CLT > Contact Manager > Companies: Para buscar la compañia Que tipo de empresa sea siempre anunciante para poder exportar archivos XML
+- Dentor de BBDD, en el servidor de UAT, para CENTRAM, no se tiene que ejecutar nada deProgrammability > stp_JCD_Org4Exp2SAPUnityCENTRAM porque se guarda entonces las alteraciones.
+- Services Windows: Para reiniciar servicios (AUT cada 3 hrs, PROD 1 vez en la noche)
+- Server > JCD Export Service > Por division > ValidationLog: Para validar si cuando se un servicio si exporto
+- Para saber de donde se esta enviando un dato, se tiene que ir al stp en la BBDD, para buscar la etiqueta
+
+------------------------ TightVNC updates ------------------------
+Pasos a seguir para cambiar una IP de TightVNC:
+1. Crear una copia de la conexion a modificar. 
+2. Sobre el nombre de la conexion original, agregar "-deprecated" guardar así
+3. Sobre la copia de conexion, modificar "Host Name (or IP address)" y poner la nueva IP
+4. Guardar la conexion
+5. Cuando abraPutty, poner "accept" en la notificacion que muestra

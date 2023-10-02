@@ -1,0 +1,61 @@
+                                          30/08/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[CAP]                       0411RX-VA02              C423781                       (Campaña empieza 5 a.m. y termina 10 p.m.)
+[PM]                        133B Digital                 C423781                       (Campaña empieza 5 a.m. y termina 10 p.m.)
+
+
+                                          31/08/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[CAP]                       0411RX-VA02               C418067 / C418069      ()
+
+
+                                          01/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[VEO]                       SAC-116                      C410150                      (Campaña empieza 2 a.m.)
+[VEO]                       SAF-SF-114                  C410148                      (Creative empieza a las 12 p.m.)
+
+
+                                          04-06-08/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[VEO]                       SAF-SF-114                  C422183                      ()
+
+
+                                          07/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[VEO]                       SAF-SF-114 / 115          C411784                     ()
+
+
+                                          11/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[CAP]                        0392LX-VA02              C419370                      ()
+[PRM]                       133A Digital                C422513                      ()
+[PRM]                       133B Digital                C424311                      ()
+[VEO]                        SAF-SF-114                 C411784                      ()
+
+
+                                          12/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[CAP]                       0411LX                         C419366                      ()
+[VEO]                       SAF-SF-115		   C424489		      ()
+
+
+                                          12/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[SAB]                        SABO-32D                   C416276                      (Campaña es de self promo y solo tiene para spots)
+
+
+                                          14/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[PRM]   	                482B Digital                 C425136                      (Puede que haya empezado tarde con la reproduccion, todo en orden)
+
+
+                                          20/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[PRM]                       133A Digital                C425314                       (Validar porque tiene menos playcounts)
+[SAB]                        SABO-25D                  C416276                       (Validar porque tiene más playcounts)
+[VEO]                       SAC-116                      C415462                      (Validar porque tiene menos playcounts)
+
+
+                                          25/09/2023
+Company ----------- VendorFaceID -------- Campaign  ------------ Notes
+[SAB]                        SABO-32D                   C416230                      (Sólo tiene un playcount)

@@ -1,0 +1,17 @@
+- 21/08/2023 [QTM] Creative is playing even in pause.: En la playlist del dia habia creatives que tenian playcounts, pero deberian estar en pausa
+
+- 23/08/2023 [QPlayer] Expired creatives have playcounts.: Hay dos campañas con dos creatives con playcounts positivos a pesar que no estan en playlist
+
+- 31/08/2023 [QTM] Data of playcounts is not sync: Playcounts que son menos en una cara
+
+- 04/06/2023 [UAT] Confusing failure alerts in QTM: Error en las alertas al poner play/pause en creatives expirados
+
+- 05/09/2023 [UAT] Cannot upload creatives in QTM: No deja subir imagenes desde el creative scheduler
+
+- 06/09/2023 [QPlayer] QPlayer plays a Black screen: Aparecia una pantalla en negro durante el loop
+
+- 11/09/2023 [QPlayer] QPlayer is not considering frequencies: Player no respeta frecuencias, poniendo todas las campañas con frecuencia de 1
+
+- 27/09/2023 [QPlayer] Shouldn't display creatives: Player muestra creatives que no y solo se arregla borrando archivos
+
+- 28/09/2023 [QTM] Error message is misleading: Error al poner un creative con fecha mayor a la de la campaña

@@ -9,22 +9,10 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
 - **Notes**  
     - **bitacora.txt**  
     File used to keep track of all the daily activities that were made, which have the following structure: 
-        <table style="text-align:center;">
-            <tr>
-                <th>Starting Date</th>
-                <th>Separator</th>
-                <th style="text-align:center;">Activity Description</th>
-                <th>Separator</th>
-                <th>Ending Date</th>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>|</td>
-                <td>...</td>
-                <td>|</td>
-                <td>...</td>
-            </tr>
-        </table>
+        | Starting Date | Activity Description | Ending Date |
+        | :---: | :---: | :---: |
+        | 7:00  | Playlist Review | 8:00 |
+        | ...  | ... | ... |
     
     - **notas.txt**  
     File with some notes about specific topics of BBP.
@@ -43,27 +31,26 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
                 <th>Notes</th>
             </tr>
             <tr>
+                <td>[PRM]</td>
+                <td>133A</td>
+                <td>C2109110</td>
+                <td>(Campaign starts late)</td>
+            </tr>
+            <tr>
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
             </tr>
         </table>
-    
-    - **tickets.txt**  
+
+    - **tickets.txt**
     File to keep track of all tickets created, which follows the next structure:
-        <table style="text-align:center;">
-            <tr>
-                <th>Date of creation</th>
-                <th>Title of ticket</th>
-                <th>Description of ticket</th>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-        </table>
+        
+        | Date of creation | Title of Ticket | Description of ticket |
+        | :---: | :---: | :---: |
+        | - 02/10/2023  | [QTM] Player is not sync | Player is not sync with campaigns |
+        | ...  | ... | ... |
 
 - **schedule.py**  
 Script made to read 'bitacora.txt' data and transform it in order to follow the 

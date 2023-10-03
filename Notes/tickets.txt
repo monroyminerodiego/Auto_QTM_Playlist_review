@@ -15,3 +15,5 @@
 - 27/09/2023 [QPlayer] Shouldn't display creatives: Player muestra creatives que no y solo se arregla borrando archivos
 
 - 28/09/2023 [QTM] Error message is misleading: Error al poner un creative con fecha mayor a la de la campaña
+
+- 03/10/2023 Replace SOV with Weight on UI: En QTM aun aparecen campos con SOV

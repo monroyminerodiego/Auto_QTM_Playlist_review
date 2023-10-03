@@ -3,10 +3,11 @@
 The following repository is 
 
 ## Description of files
-- Images  
+- **Images**  
 Folder used to store the images that the AOPP Robots will refer to accomplish their tasks.
-- Notes
-    - bitacora.txt  
+
+- **Notes**  
+    - **bitacora.txt**  
     File used to keep track of all the daily activities that were made, which have the following structure: 
         <table style="text-align:center;">
             <tr>
@@ -24,11 +25,14 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
                 <td>...</td>
             </tr>
         </table>
-    - notas.txt  
+    
+    - **notas.txt**  
     File with some notes about specific topics of BBP.
-    - pendientes.txt  
+    
+    - **pendientes.txt**  
     File where the notes of following/pending tickets tickets are stored. Also used as the file to keep track of daily pendings.
-    - playcounts.txt  
+    
+    - **playcounts.txt**  
     File to keep track of issues with playcounts during daily review of bbdd generated file, which follows the next structure:
         <table style="text-align:center;">
             <caption><b>Date of Incident</b></caption>
@@ -45,7 +49,8 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
                 <td>...</td>
             </tr>
         </table>
-    - tickets.txt  
+    
+    - **tickets.txt**  
     File to keep track of all tickets created, which follows the next structure:
         <table style="text-align:center;">
             <tr>
@@ -60,13 +65,13 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
             </tr>
         </table>
 
-- schedule.py  
-Script made use the information of 'bitacora.txt' file and will 
+- **schedule.py**  
+Script made to read 'bitacora.txt' data and transform it in order to follow the 
 
-- start_sesion.py  
+- **start_sesion.py**  
 
 
-- xcel_formula.py  
+- **xcel_formula.py**  
 
 
 

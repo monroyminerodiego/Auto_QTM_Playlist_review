@@ -57,7 +57,6 @@ def generate_schedule(days_to_substract=0):
     row_number = 2
     for activity in activities:
         activity = ((activity).replace('\n','')).split('|')
-        print(activity)
         
         date = dt.datetime.now() - dt.timedelta(days=days_to_substract)
 

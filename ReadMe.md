@@ -57,7 +57,6 @@ Script made to read 'bitacora.txt' data and transform it in order to follow the
 
 - **start_sesion.py**  
 
-
 - **xcel_formula.py**  
 
 - **constant_move.py**  
@@ -66,7 +65,8 @@ Script made to read 'bitacora.txt' data and transform it in order to follow the
 
 ## Version Log
 ### v 1.0.3:
-- Added docummentation, 'schedule.py' file, 'xcel_formula.py' file.
+- Added docummentation, 'schedule.py' file, 'xcel_formula.py' file, and'constant_move.py' file.
 - Modification of some parameters in 'start_sesion.py' file.
-- Creation of folder 'Notes', which will contain the '.txt' files used to keep track/order of notes required in BBP - Digital Services area. 
-- Creation of folder 'Images', which will contain the needed '.png' images for 'start_sesion.py' file to work properly.
+- Creation of 'Notes' folder, which will contain the '.txt' files used to keep track/order of notes required in BBP - Digital Services area. 
+- Creation of 'Images' folder, which will contain the needed '.png' images for 'start_sesion.py' file to work properly.
+- Creation of 'RenameTool' folder. For further documentation, check 'README.md' file from folder.

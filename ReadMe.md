@@ -60,6 +60,8 @@ Script made to read 'bitacora.txt' data and transform it in order to follow the
 
 - **xcel_formula.py**  
 
+- **constant_move.py**  
+
 
 
 ## Version Log

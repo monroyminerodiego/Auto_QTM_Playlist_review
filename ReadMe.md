@@ -9,7 +9,7 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
 - **Notes**  
     - **bitacora.txt**  
     File used to keep track of all the daily activities that were made, which have the following structure: 
-        | Starting Date | Activity Description | Ending Date |
+        | Starting Time | Activity Description | Ending Time |
         | :---: | :---: | :---: |
         | 7:00  | Playlist Review | 8:00 |
         | ...  | ... | ... |
@@ -53,7 +53,7 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
         | ...  | ... | ... |
 
 - **schedule.py**  
-Script made to read 'bitacora.txt' data and transform it in order to follow the 
+Script made to read 'bitacora.txt' data and transform it in order to follow the format of 'MX Schedule' spreadsheets.
 
 - **start_sesion.py**  
 

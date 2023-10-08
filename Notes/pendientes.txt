@@ -1,4 +1,4 @@
-- [DM] Descargar imagenes de servidor 2.133
+
 
 ------------------------ TICKETS SEGUIMIENTO ------------------------
 - Wed 27/09/2023 [QPlayer] Shouldn't display creatives

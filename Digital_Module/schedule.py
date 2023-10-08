@@ -58,7 +58,7 @@ def generate_schedule(days_to_substract=0):
             return f'\t\t\t{task}'
         
     
-    activities = open('Notes/bitacora.txt')
+    activities = open('../Notes/bitacora.txt')
     clipboard = ''
     row_number = 2
     for activity in activities:

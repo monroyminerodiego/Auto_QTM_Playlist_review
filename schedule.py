@@ -3,9 +3,13 @@ os.system('cls')
 
 def generate_schedule(days_to_substract=0):
     '''
-    The function only takes one optional parameter, called 'days', which will have a default value of 0, refering to the days that we need to substract of the actual date in the data.
+    Function that generates a string with the data from './Notes/bitacora.txt'
 
-    The output of this function will be a string containing all the data from 'bitacora.txt' file, transformed to match the format of 'MX Schedule' spreadsheet file.
+    Inputs:
+    - days_to_substract type['int']: Default value is set to '0', but it expects the number of days to substract to actual date.
+
+    Outputs:
+    - cliboard type['str']: String that has the data from './Notes/bitacora.txt' in the correct form to be paste in 'MX Schedule' spreadsheets
     '''
     keywords_dic = {
         'playlist' :'Digital Support\tAll\t\tFirst webcam and playlist monitoring',
@@ -21,14 +25,16 @@ def generate_schedule(days_to_substract=0):
     
     def get_elapsed_time(activity):
         '''
-        Function created to calculate the duration of the activity.
+        Function that calculate the time elapsed between 2 time strings
 
-        Takes by input a required argument called 'activity', which expects to be a list with  3 elements following the next order: Initial Hour, Activity Description, Final Hour.
+        Inputs:
+        - activity type['list']: Only 3 strings are expected to be included on the list in that especific order [Initial hour,Description of Activity,Final hour].
+            - Initial hour: String with the information of the initial hour to be consider. Must have the following format: '%H:%M'
+            - Description of Activity: String describing the activity developed during the time to calculate 
+            - Final hour: String with the information of the final hour to be consider. Must have the following format: '%H:%M'
 
-        The output of this function will be the time elapsed during the development of the activity.
-        
-        Notes:
-        - Hours must have the following format "%H:%M"
+        Outputs:
+        - time_elapsed type['string']: String that represents the time elapsed between Initial hour and Final hour
         '''
         initial_hour = dt.datetime.strptime((f'{activity[0]}'),'%H:%M')    
         final_hour = dt.datetime.strptime((f'{activity[2]}'),'%H:%M')

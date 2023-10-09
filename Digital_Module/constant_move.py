@@ -24,5 +24,5 @@ while True:
         os.system('cls')
         print(f'Moviendo a ({x},{y})...',end='\r')
         py.moveTo(x,y,duration=2)
-        py.sleep(5)
+        py.sleep(2.5)
             

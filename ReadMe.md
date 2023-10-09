@@ -2,7 +2,18 @@
 ## Description
 The following repository is 
 
-## Description of files
+## General Structure
+- **DigitalModule**  
+    - **schedule.py**  
+    Script made to read 'bitacora.txt' data and transform it in order to follow the format of 'MX Schedule' spreadsheets.
+
+    - **start_sesion.py**  
+
+    - **xcel_formula.py**  
+
+    - **constant_move.py**  
+
+
 - **Images**  
 Folder used to store the images that the AOPP Robots will refer to accomplish their tasks.
 
@@ -52,16 +63,12 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
         | - 02/10/2023  | [QTM] Player is not sync | Player is not sync with campaigns |
         | ...  | ... | ... |
 
-- **schedule.py**  
-Script made to read 'bitacora.txt' data and transform it in order to follow the format of 'MX Schedule' spreadsheets.
+- **RenameTool**  
+    - **Data**  
 
-- **start_sesion.py**  
+    - **List_of_IBO_companies.sql**  
 
-- **xcel_formula.py**  
-
-- **constant_move.py**  
-
-
+    - **rename.py**
 
 ## Version Log
 ### v 1.0.3:

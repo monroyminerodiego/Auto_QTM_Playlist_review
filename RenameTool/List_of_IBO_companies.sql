@@ -15,8 +15,8 @@ Pending:
 SELECT DISTINCT
 	SellerID, 
 	CompanyName
-	--FaceID,
-	--ClientFaceID,
+	FaceID,
+	ClientFaceID,
 	--ImageAS
 	
 FROM Company 

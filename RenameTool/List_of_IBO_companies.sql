@@ -16,7 +16,7 @@ SELECT DISTINCT
 	SellerID, 
 	CompanyName
 	FaceID,
-	ClientFaceID,
+	ClientFaceID
 	--ImageAS
 	
 FROM Company 

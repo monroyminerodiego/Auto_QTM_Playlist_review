@@ -1,7 +1,7 @@
 import pyperclip as pc, os, datetime as dt, sys
 os.system('cls')
 
-def generate_schedule(days_to_substract=0):
+def generate_schedule(days_to_substract:int=0):
     '''
     Function that generates a string with the data from './Notes/bitacora.txt'
 
@@ -23,12 +23,12 @@ def generate_schedule(days_to_substract=0):
     # Headers of MX Schedule
     # Year -- Month -- Day -- Person -- (Project -- Category -- Is Sev1 -- Task) -- Hrs -- Billable Hrs -- WeekNum
     
-    def get_elapsed_time(activity):
+    def get_elapsed_time(activity:list):
         '''
         Function that calculate the time elapsed between 2 time strings
 
         Inputs:
-        - activity type['list']: Only 3 strings are expected to be included on the list in that especific order [Initial hour,Description of Activity,Final hour].
+        - activity type['list']: Only 3 strings are expected to be included on the list in this especific order [Initial hour,Description of Activity,Final hour].
             - Initial hour: String with the information of the initial hour to be consider. Must have the following format: '%H:%M'
             - Description of Activity: String describing the activity developed during the time to calculate 
             - Final hour: String with the information of the final hour to be consider. Must have the following format: '%H:%M'
@@ -41,7 +41,7 @@ def generate_schedule(days_to_substract=0):
         time_elapsed = "{:.1f}".format((int((final_hour-initial_hour).total_seconds()))/3600)
         return time_elapsed
 
-    def get_prj_ctg(task):
+    def get_prj_ctg(task:str):
         '''
         This function takes by arguments only one parameter, which will be the activity description
         '''
@@ -57,12 +57,22 @@ def generate_schedule(days_to_substract=0):
         else:
             return f'\t\t\t{task}'
         
-    
-    activities = open('../Notes/bitacora.txt')
+    def sum_breaks_elapsed_time(activity:str):
+        '''
+        '''
+
+
+
+        return activity
+
+
+    file = open('../Notes/bitacora.txt')
     clipboard = ''
     row_number = 2
-    for activity in activities:
+    for activity in file:
         activity = ((activity).replace('\n','')).split('|')
+
+        if '~' in activity: activity = sum_breaks_elapsed_time(activity)
         
         date = dt.datetime.now() - dt.timedelta(days=days_to_substract)
 

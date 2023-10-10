@@ -14,11 +14,10 @@ Pending:
 
 SELECT DISTINCT
 	SellerID, 
-	CompanyName
-	FaceID,
-	ClientFaceID
+	CompanyName,
+	FaceID,        -- Old Name
+	ClientFaceID   -- New Name
 	--ImageAS
-	
 FROM Company 
 	INNER JOIN Face ON Face.SellerID = Company.CompanyID 
 WHERE 1=1 
@@ -28,5 +27,4 @@ WHERE 1=1
 	AND Company.InventoryOnly = 1
 	AND (RetirementDate IS NULL OR RetirementDate > getdate())
 	-- AND (ImageAS IS NOT NULL AND  ImageAS != '')
-
 ORDER BY SellerID

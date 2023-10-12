@@ -1,4 +1,4 @@
-- [CP] Validar que pasa si hay archivos con el mismo nombre, que no viene en el excel
+- [DM] Q&A ticket Digital Faces listing and Selector, Division Preferences fixes 091622
 
 ------------------------ TICKETS SEGUIMIENTO ------------------------
 - Wed 27/09/2023 [QPlayer] Shouldn't display creatives

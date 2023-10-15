@@ -41,8 +41,8 @@ for ParentDir in ParentDirs:
     delete_files =[]
     
     for row in DirList_cleaned.itertuples():
-        if not(row.FileNameCleaned in ParametersCSV['FaceID']):
+        if not(row.FileNameCleaned in list(ParametersCSV['FaceID'])):
             delete_files.append(f'{row.FileName}{row.Extension}')
-            print('')
+            print(f'{row.FileName}{row.Extension}', end='\r')
 
     break

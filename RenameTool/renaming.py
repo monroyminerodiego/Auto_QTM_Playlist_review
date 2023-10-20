@@ -1,7 +1,7 @@
 import os, pandas as pd, numpy as np
 from getpass import getuser
 from tqdm import tqdm
-os.system('cls'); input(f"renaming.py\n\n")
+os.system('cls'); input(f"renaming.py")
 
 path = f'C:/Users/{getuser()}/OneDrive/BBP/Images IBO Cleaned/'
 ParametersCSV = pd.read_csv(open('Data/parameters.csv'))

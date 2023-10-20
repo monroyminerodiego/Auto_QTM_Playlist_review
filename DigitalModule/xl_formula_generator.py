@@ -1,4 +1,5 @@
 import pyperclip as pc, os, sys
+import fill_schedule as fs
 os.system('cls')
 
 input("Presiona 'enter' para comenzar...")

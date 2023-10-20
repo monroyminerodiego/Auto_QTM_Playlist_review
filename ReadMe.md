@@ -3,27 +3,23 @@
 The following repository is 
 
 ## General Structure
-- **DigitalModule**  
-    - **schedule.py**  
-    Script made to read 'bitacora.txt' data and transform it in order to follow the format of 'MX Schedule' spreadsheets.
-
-    - **start_sesion.py**  
-
-    - **xcel_formula.py**  
-
-    - **constant_move.py**  
-
-
-- **Images**  
-Folder used to store the images that the AOPP Robots will refer to accomplish their tasks.
-
 - **Notes**  
     - **bitacora.txt**  
     File used to keep track of all the daily activities that were made, which have the following structure: 
-        | Starting Time | Activity Description | Ending Time |
+        | Starting Time | Title of Activity | Ending Time |
         | :---: | :---: | :---: |
-        | 7:00  | Playlist Review | 8:00 |
+        | 7:00  | Playlist | 8:00 |
+        | 8:00  | Playcounts | 9:00~{10:00-11:00}|
         | ...  | ... | ... |
+
+        Considerations:  
+        - 'Ending Time' can have two possible data formats: 'Simple' and 'Complex'.  
+            **Simple format:** (E.g.: 8:00) is used when the activity did not had any break during time execution.  
+            **Complex format:** ( E.g.: 9:00~{10:00-11:00} ) is used when the activity had a break during time execution.  
+            E.g.: Playcounts activity started at 8:00 a.m., but at 9 a.m. the activity stopped and it was resumed from 10:00 a.m. to 11:00 a.m.  
+        - Any time value needs to follow '%H:%M' format, regardless if it's 'Starting Time', 'Ending Time' in simple format or 'Ending Time' in complex format.
+    <br>    
+
     
     - **notas.txt**  
     File with some notes about specific topics of BBP.
@@ -54,14 +50,48 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
                 <td>...</td>
             </tr>
         </table>
-
+    
     - **tickets.txt**
-    File to keep track of all tickets created, which follows the next structure:
-        
+    File to keep track of all tickets created, which follows the next structure     
         | Date of creation | Title of Ticket | Description of ticket |
         | :---: | :---: | :---: |
         | - 02/10/2023  | [QTM] Player is not sync | Player is not sync with campaigns |
         | ...  | ... | ... |
+<br><br>
+
+
+
+- **DigitalModule**  
+    Folder used to store all the scripts created to ease the development of the role 'Digital Services'.
+
+    - **fill_schedule.py**  
+        Script made to read 'bitacora.txt' data and transform it in order to follow the format of 'MX Schedule' spreadsheets, which are:<br>
+        | Year | Month | Day | Person | Project | Category | Is Sev1 | Task | Hrs | Billable Hrs | WeekNum |
+        | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+        | 2023  | 10 | 17 | Diego | BBP Projects | Training |     | Playlist | 1.0 |     | 42 |
+        | ...  | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |<br><br>
+        
+        The functions involved in this file are:
+            <table style="text-align:center;">
+                <tr>
+                    <th>Name</th>
+                    <th>Inputs</th>
+                    <th>Outputs</th>
+                    <th>Summary</th>
+                </tr>
+                <tr>
+                    <td>
+                </tr>
+            </table>
+    <br>
+
+    - **xcel_formula.py**  
+
+
+    - **constant_move.py**  
+<br><br>
+
+
 
 - **RenameTool**  
     - **Data**  
@@ -69,8 +99,16 @@ Folder used to store the images that the AOPP Robots will refer to accomplish th
     - **List_of_IBO_companies.sql**  
 
     - **rename.py**
+<br><br>
+
+
 
 ## Version Log
+### v 1.1.0:  
+- Renamed some files from 'DigitalModule' folder.
+- Added 'PlaylistTool' folder.
+- 
+
 ### v 1.0.3:
 - Added docummentation, 'schedule.py' file, 'xcel_formula.py' file, and'constant_move.py' file.
 - Modification of some parameters in 'start_sesion.py' file.

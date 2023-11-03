@@ -71,10 +71,11 @@ The following repository is
         | 2023  | 10 | 17 | Diego | BBP Projects | Training |     | Playlist | 1.0 |     | 42 |
         | ...  | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |<br><br>
         
-        The functions involved in this file are:
+        The classes involved in this file is called 'generate_schedule', which will have the following methods:
             <table style="text-align:center;">
                 <tr>
-                    <th>Name</th>
+                    <th>Method</th>
+                    <th>Scope</th>
                     <th>Inputs</th>
                     <th>Outputs</th>
                     <th>Summary</th>

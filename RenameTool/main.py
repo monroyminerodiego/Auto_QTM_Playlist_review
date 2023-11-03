@@ -32,15 +32,15 @@ MissingDirs = list(set(CSV_ParentDirs).difference(IBO_ParentDirs))
 # print(f'{"*" * 15} Missing Dirs - IBO {"*" * 15}\n{MissingDirs}\n\n')
 
 # Titles for report
-missing_files_csv = open('C:/Users/Diego Monroy/Projects/BBP/RenameTool/Data/missing_files.csv','a')
+missing_files_csv = open(f'C:/Users/{getuser()}/Projects/BBP/RenameTool/Data/missing_files.csv','a')
 np.savetxt(missing_files_csv,['SellerID,CompanyName,FaceID,ClientFaceID'],fmt='%s',delimiter=',')
 missing_files_csv.close()
 
-unchanged_files = open('C:/Users/Diego Monroy/Projects/BBP/RenameTool/Data/unchanged_files.csv','a')
+unchanged_files = open(f'C:/Users/{getuser()}/Projects/BBP/RenameTool/Data/unchanged_files.csv','a')
 np.savetxt(unchanged_files,['Folder,File'],fmt='%s',delimiter=',')
 unchanged_files.close()
 
-duplicated_files = open('C:/Users/Diego Monroy/Projects/BBP/RenameTool/Data/duplicated_files.csv','a')
+duplicated_files = open(f'C:/Users/{getuser()}/Projects/BBP/RenameTool/Data/duplicated_files.csv','a')
 np.savetxt(duplicated_files,['SellerID,CompanyName,FaceID,ClientFaceID'],fmt='%s',delimiter=',')
 duplicated_files.close()
 
